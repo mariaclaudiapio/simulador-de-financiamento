@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Simulador de Financiamento</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="container__titulo">
+            <h2 class="titulos-principais">Simulação de Financiamento</h2>
+        </div>
+        <form>
+            <div class="container__inputs">
+                <div class="container__inputs-label">
+                    <label for="valor">Valor:</label>
+                    <input id="valor" type="text" placeholder="Valor do Empréstimo"><br>
+                </div>
+                <div class="container__inputs-label">
+                    <label for="prazo">Prazo (em anos):</label>
+                    <input id="prazo" type="text" placeholder="Prazo (em anos)"><br>
+                </div>    
+                <div class="container__inputs-label">
+                    <label for="taxaJuros">Juros ao ano:</label>
+                    <input id="taxaJuros" type="text" placeholder="Taxa de Juros (%)"><br>
+                </div>
+            </div>
+            <div class="container__botao-pai">        
+                <button id="container__botao">Simular</button>
+            </div>            
+                        
+        </form>
+        <table class="container__tabela">
+            <thead>
+                <tr>
+                    <th class="titulos-secundarios">Prestação</th>
+                    <th class="titulos-secundarios">Amortização</th>
+                    <th class="titulos-secundarios">Juros</th>
+                    <th class="titulos-secundarios">Total</th>                        
+                </tr>
+            </thead>
+            <tbody id="container__tabela-corpo"></tbody>
+        </table>
+    </div>
+    
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
