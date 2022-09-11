@@ -17,11 +17,13 @@ body,
     margin: 10vw auto;
     border-radius: 10px;
     padding: 2vw;
-    background-color: var(--cor-secundaria);
-    background-image: url(./ilustration.svg);
-    background-repeat: no-repeat;
-    background-size: 12em;
-    background-position: top 2em right;
+    background-color: var(--cor-secundaria);    
+}
+
+img {
+    width: 15vw;
+    float: right;
+    margin: 1em;
 }
 
 .container__inputs {
@@ -83,24 +85,26 @@ tbody tr:hover {
         background-position: top 2em center;
 
     }
+    
+    img {
+        width: 60vw;
+        margin: 0 auto;
+    }
 
     .container__titulo,
     .container__inputs {
         display: flex;
         flex-direction: column;
-        text-align: center;
+        text-align: center;        
     }
     
-    .container__titulo {
-        margin-top: 25vh;        
-    }
-
     input {
         padding: .5em;
         border-radius: 5px;
         border: 1px solid var(--cor-terciaria);
     }
 
+    
     .container__tabela {
         width: 90vw;
     }
