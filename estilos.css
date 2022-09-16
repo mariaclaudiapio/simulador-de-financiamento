@@ -1,0 +1,132 @@
+:root {
+    font-family: Poppins;
+    --cor-principal: #9933CC;
+    --cor-secundaria: #ffffff;
+    --cor-terciaria: #CCCCCC;
+}
+
+body {
+    background-color: var(--cor-principal);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--cor-secundaria);
+    border-radius: 5px;
+    margin: 5vw
+}
+
+img {
+    width: 70vw;
+    margin-top: 2em;
+}
+
+.campo label {
+    display: block
+}
+
+input {
+    width: 70vw;
+    padding: .5em;
+    margin: .5em;
+    border: solid 1px var(--cor-terciaria);
+    border-radius: 3px;
+}
+
+button {
+    background-color: var(--cor-principal);    
+    color: var(--cor-secundaria);
+    padding: .5em;
+    margin: .5em;
+    border: none;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+h1,
+h2, 
+th {
+    color: var(--cor-principal)
+}
+
+table{    
+    margin-top: 2em;
+}
+
+th,
+td {
+    text-align: left;
+}
+
+tbody tr:hover {
+    background-color: var(--cor-terciaria);
+}
+
+@media (min-width: 800px) {
+    .container {
+        text-align: start; 
+        background-image: url(./ilustration.svg);
+        background-repeat: no-repeat;
+        background-size: 250px; 
+        background-position: right 3em top 3em;      
+    }
+
+    .container__input,
+    .container__input-simulacao {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .container__input-simulacao {
+        align-self: flex-start;
+        margin: 1rem;
+    }
+
+    h1, h2 {
+        display: inline-block;
+    }
+    
+    h1 {
+        margin: 5rem auto;
+    }
+
+    img {        
+        display: none;        
+    }
+
+    #valor,
+    #prazoAnos,
+    #jurosAno {
+        width: 20vw;
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    input {
+        width: 25vw;
+        margin-left: 0;
+    }
+
+    .botao {
+        display: flex;
+        align-self: start;
+    }
+    
+    button {
+        margin: 1rem;
+        font-size: 18px;
+        width: 10vw;
+    }
+
+    table {
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    thead tr {
+        border-bottom: solid 2px var(--cor-principal);
+    }
+}
